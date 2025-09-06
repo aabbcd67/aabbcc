@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kejaksaan Tinggi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 60px;
+      vertical-align: middle;
+    }
+    nav {
+      background: #00509e;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin: 5px 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #003366;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    p {
+      line-height: 1.6;
+      text-align: justify;
+    }
+    /* Card bidang */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+      padding: 20px;
+      transition: transform 0.2s ease;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      color: #00509e;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    /* Foto kepala & wakil */
+    .leaders {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .leader {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+      width: 200px;
+      text-align: center;
+    }
+    .leader img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .struktur {
+      background: #eaf1fb;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+    .img-full {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/60" alt="Logo">
+    <h2>⚖️ Kejaksaan Tinggi</h2>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#militer">Bidang Militer</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home">
+    <h1>Selamat Datang di Kejaksaan Tinggi</h1>
+    <p>
+      Kejaksaan Tinggi (Kejati) merupakan lembaga pemerintahan di bidang hukum yang berkedudukan di ibu kota provinsi.
+      Kejati berperan dalam melaksanakan kekuasaan negara di bidang penuntutan, perdata, dan tata usaha negara,
+      serta bertindak sebagai pengacara negara.
+    </p>
+
+    <h2>Kepala & Wakil Kejaksaan Tinggi</h2>
+    <div class="leaders">
+      <div class="leader">
+        <img src="https://via.placeholder.com/200x250" alt="Kepala Kejati">
+        <h4>Kepala Kejati</h4>
+        <p>Pimpinan utama Kejaksaan Tinggi.</p>
+      </div>
+      <div class="leader">
+        <img src="https://via.placeholder.com/200x250" alt="Wakil Kejati">
+        <h4>Wakil Kejati</h4>
+        <p>Membantu Kepala dalam koordinasi.</p>
+      </div>
+    </div>
+
+    <h2>Bidang di Kejaksaan Tinggi</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/80" alt="Pembinaan">
+        <h3>Bidang Pembinaan</h3>
+        <p>Mengelola urusan administrasi dan keuangan Kejati.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/80" alt="Intelijen">
+        <h3>Bidang Intelijen</h3>
+        <p>Melaksanakan kegiatan intelijen penegakan hukum.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/80" alt="Pidum">
+        <h3>Bidang Tindak Pidana Umum</h3>
+        <p>Menangani perkara pidana umum.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/80" alt="Pidsus">
+        <h3>Bidang Tindak Pidana Khusus</h3>
+        <p>Menangani tindak pidana khusus seperti korupsi.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/80" alt="Datun">
+        <h3>Bidang Perdata & Tata Usaha Negara</h3>
+        <p>Bertindak sebagai pengacara negara.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/80" alt="Pengawasan">
+        <h3>Bidang Pengawasan</h3>
+        <p>Mengawasi pelaksanaan tugas aparatur kejaksaan.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/80" alt="Militer">
+        <h3>Bidang Pidana Militer</h3>
+        <p>Menangani perkara hukum yang melibatkan militer.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MILITER -->
+  <section id="militer">
+    <h1>Bidang Militer</h1>
+    <p>
+      Bidang Pidana Militer menangani perkara hukum yang melibatkan anggota militer.
+    </p>
+    <img src="https://via.placeholder.com/900x300" class="img-full" alt="Foto Militer">
+    <div class="struktur">
+      <ul>
+        <li>Kepala Bidang Pidana Militer</li>
+        <li>Kepala Sub Bidang Penuntutan Militer</li>
+        <li>Kepala Sub Bidang Intelijen Militer</li>
+        <li>Kepala Sub Bidang Pembinaan Perkara Militer</li>
+        <li>Jaksa Militer</li>
+        <li>Staf Administrasi</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang">
+    <h1>Tentang Kejaksaan Tinggi</h1>
+    <p>
+      Kejaksaan Tinggi adalah bagian dari Kejaksaan Republik Indonesia yang berperan penting dalam menegakkan hukum,
+      keadilan, dan kebenaran berdasarkan Pancasila dan UUD 1945.
+    </p>
+    <img src="https://via.placeholder.com/900x300" class="img-full" alt="Gedung Kejaksaan">
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak">
+    <h1>Kontak</h1>
+    <p>Untuk informasi lebih lanjut:</p>
+    <ul>
+      <li>📍 Alamat: Jl. Contoh Raya No.123, Jakarta</li>
+      <li>📞 Telepon: (021) 1234567</li>
+      <li>📧 Email: kejati@example.go.id</li>
+      <li>🌐 Website: www.kejati.go.id</li>
+    </ul>
+    <img src="https://via.placeholder.com/900x300" class="img-full" alt="Peta Lokasi">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kejaksaan Tinggi Republik Indonesia</p>
+  </footer>
+</body>
+</html>
